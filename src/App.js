@@ -1,5 +1,7 @@
 import React from "react";
+import NasaList from "./components/NasaList";
 import "./App.css";
+
 
 function App() {
   return (
@@ -8,6 +10,7 @@ function App() {
         Read through the instructions in the README.md file to build your NASA
         app! Have fun 🚀!
       </p>
+      <NasaList /> 
     </div>
   );
 }
