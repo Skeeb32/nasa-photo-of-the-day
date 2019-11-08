@@ -1,15 +1,17 @@
 import React from "react";
+import NasaList from "./components/NasaList";
 import "./App.css";
+// import Example from './components/Example';
+import NavBar from "./components/NavBar"
+
 
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      <NavBar />
+      <NasaList />
+         {/* <Example />  */}
     </div>
   );
 }
-
 export default App;
