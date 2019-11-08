@@ -7,22 +7,32 @@ import {
   CardTitle, Button, Col
 } from 'reactstrap';
 
-import NasaList from "./NasaList";
+// import NasaList from "./NasaList";
+
+const Body = styled.div `
+
+overflow-x: hidden;
+background-color: grey;
+background-image: url(./images/redmoon.jpg);
+background-size: stretch;
+background-repeat: repeat;
+padding: 0;
+margin: 0;
+
+`;
 
 const NasaCard2 = styled.div `
     background: none;
     color: black;
-    width: 1200px;
-    max-height: 1350px;
     display: flex;
     flex-direction: column;
     align-items: center;
 `;
 
-
 const NasaCard = (props) => {
   return (
-    <NasaCard2>
+    <Body>
+    <NasaCard2> 
 <Col xs="12" s="6" md="4">
       <Card>
         <CardImg
@@ -39,7 +49,9 @@ const NasaCard = (props) => {
         </CardBody>
       </Card>
       </Col>
-    </NasaCard2>
+      </NasaCard2>
+      </Body>
+     
   );
 };
 

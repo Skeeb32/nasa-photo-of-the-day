@@ -9,7 +9,7 @@ import {
 
 const items = [
   {
-    src: 'https://source.unsplash.com/random',
+    src: {'https://source.unsplash.com/random'},
     altText: 'Slide 1',
     caption: 'Slide 1'
   },
